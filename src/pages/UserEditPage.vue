@@ -34,7 +34,7 @@ const onSubmit = async () => {
     const currentUser = await getCurrentUser();
 
     if (!currentUser) {
-        Toast.fail('用户未登录');
+        showFailToast('用户未登录');
         return;
     }
 
